@@ -12,8 +12,8 @@
 <body>
 <div class="container">
     <div class="row">
-        <form action="index.php">
-            <a href="http://localhost:81/project/demogit/add.php"> Adduser</a>
+        <form action="adduser.php">
+            <button class="btn btn-info" type="submit">Adduser</button>
         </form>
         <table class="table" bgcolor="aqua" >
             <thead >
