@@ -12,8 +12,12 @@
 <body>
 <?php
 if (isset($_POST['email'])) {
-echo 'email la:'. $_POST['email'];}
+echo 'Email la: '. $_POST['email'] ;}
+echo "<br>";
+if (isset($_POST['pass'])){
+    echo 'Mat khau la:'.$_POST['pass'];}
 ?>
+<br>
 <form action="user.php">
 <button type="submit" class="btn btn-default">Submit</button>
 </form>

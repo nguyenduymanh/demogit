@@ -12,14 +12,14 @@ echo "hello world ";
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-<form action="user.php" method="post">
+<form action="post.php" method="post">
     <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
         <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
     </div>
     <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <input name="pass" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
     </div>
     <button type="submit" class="btn btn-default">Submit</button>
 </form>
