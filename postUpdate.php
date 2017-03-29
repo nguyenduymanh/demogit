@@ -13,14 +13,14 @@ $dbname = 'mydb';
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     echo 'Loi ket noi' . $conn->connect_error;
-} else echo '';
-
+} else echo 'Ket noi thanh cong!!';
+$stid = $_POST['id'];
 $name = $_POST['name'];
 $status = $_POST['status'];
-$sql = "Insert into student (name,status) value ('" . $name . "','" . $status . "')";
+$sql = "UPDATE `student` SET `name` = '$name', `status` = '$status' WHERE `student`.`id` = $stid";
 
 if ($conn->query($sql) == TRUE) {
-    echo 'Them thanh cong';
+    echo '';
 } else {
     echo 'error:' . $sql . "</br>" . $conn->connect_errno;
 }

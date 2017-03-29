@@ -13,14 +13,13 @@ $dbname = 'mydb';
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     echo 'Loi ket noi' . $conn->connect_error;
-} else echo '';
+} else echo 'Ket noi thanh cong!!';
+$stid = $_GET['id'];
+$sql = "DELETE FROM `student` WHERE `student`.`id` = $stid";
 
-$name = $_POST['name'];
-$status = $_POST['status'];
-$sql = "Insert into student (name,status) value ('" . $name . "','" . $status . "')";
 
 if ($conn->query($sql) == TRUE) {
-    echo 'Them thanh cong';
+    echo 'Xóa thành công';
 } else {
     echo 'error:' . $sql . "</br>" . $conn->connect_errno;
 }

@@ -13,28 +13,26 @@
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
+<form action="post.php" method="post">
 <div class="container">
-    <div class="row">
+    <form class="row">
         <div class="form-group">
         <form action="user.php" method="get">
             <div class="form-group">
-            <label for="Fullname">Fullname</label>
-            <input name="Fullname" type="text" class="form-control" id="Fullname" placeholder="Fullname">
+            <label for="Name">Name</label>
+            <input name="name" type="text" class="form-control" id="Name" placeholder="Name">
             </input>
             </div>
             <div class="form-group">
-                <label for="Emai">Email</label>
-                <input name="Email" type="EMAIL" class="form-control" id="Email" placeholder="Email">
+                <label for="Status">Status</label>
+                <input name="status" type="text" class="form-control" id="Status" placeholder="Status">
                 </input>
             </div>
-            <div class="form-group">
-                <label for="Birthday">Brithday</label>
-                <input name="Birthday" type="date" class="form-control" id="Birthday" placeholder="Brithday">
-                </input>
-            </div>
-            <button class="form-group" type="submit">OKay</button>
+
+            <button class="btn form-group" type="submit">Add</button>
         </form>
     </div>
+    </form>
 </div>
 </body>
 </html>
