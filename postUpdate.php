@@ -13,16 +13,16 @@ $dbname = 'mydb';
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     echo 'Loi ket noi' . $conn->connect_error;
-} else echo 'Ket noi thanh cong!!';
+} else echo '';
 $stid = $_POST['id'];
 $name = $_POST['name'];
 $status = $_POST['status'];
 $sql = "UPDATE `student` SET `name` = '$name', `status` = '$status' WHERE `student`.`id` = $stid";
 
 if ($conn->query($sql) == TRUE) {
-    echo '';
+    echo 'Update thanh cong!';
 } else {
-    echo 'error:' . $sql . "</br>" . $conn->connect_errno;
+    echo 'error:' . $sql . "</br>" . $conn->connect_error;
 }
 ?>
 <html>

@@ -15,6 +15,7 @@ if ($conn->connect_error) {
 
 
 ?>
+<h1 class="container"><u><b>List user</b></u></h1>
 <div class="container">
     <div class="row">
         <table class="table" bgcolor="aqua">
@@ -28,7 +29,7 @@ if ($conn->connect_error) {
             </thead>
             <tbody>
             <?php
-            $sql = "SELECT  * FROM student";
+            $sql = "SELECT  * FROM student ORDER BY name";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
