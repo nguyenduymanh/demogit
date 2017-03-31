@@ -15,7 +15,7 @@ if ($conn->connect_error) {
     echo 'Loi ket noi' . $conn->connect_error;
 } else echo '';
 
-$name = $_POST['name'];
+$name = $_POST['nameadd'];
 $status = $_POST['status'];
 $sql = "Insert into student (name,status) value ('" . $name . "','" . $status . "')";
 
