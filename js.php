@@ -14,22 +14,14 @@ echo "hello world ";
     <link rel="stylesheet" href="css/bootstrap.css">
     <script language="JavaScript">
         function check() {
-            mail=document.fo.email;
-            pass=document.fo.pass;
+            ten=document.fo.ten;
             reg1=/^[0-9A-Za-z]+[0-9A-Za-z_]*@[\w\d.]+.\w{2,4}$/;
-            if (mail.value=="")
+            if (ten.value=="")
             {
-                alert("Chua nhap email!");
-                mail.focus();
+                alert("Chua nhap ten!");
+                ten.focus();
                 return false;
             }
-            if (pass.value=="")
-            {
-                alert("Chua nhap mat khau!");
-                pass.focus();
-                return false;
-            }
-            else return true;
 
 
 
@@ -44,7 +36,7 @@ echo "hello world ";
 <form name="fo" method="post" onsubmit="return check();">
     <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
-        <input name="email" type="text" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        <input name="ten" type="text" class="form-control" id="exampleInputEmail1" placeholder="Email">
     </div>
     <div class="form-group">
         <label for="exampleInputPassword1">Password</label>

@@ -15,7 +15,7 @@ if ($conn->connect_error) {
     echo 'Loi ket noi' . $conn->connect_error;
 } else echo '';
 $stid = $_POST['id'];
-$name = $_POST['name'];
+$name = $_POST['nameu'];
 $status = $_POST['status'];
 $sql = "UPDATE `student` SET `name` = '$name', `status` = '$status' WHERE `student`.`id` = $stid";
 
